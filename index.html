@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="zh-Hant" data-language="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101310" />
+    <meta
+      name="description"
+      content="一場關於米飯、野生魚、香蕉、咖啡與氣候連鎖反應的雙語互動策展。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AFTERTASTE — 每一餐，都有氣候回聲</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      <span class="copy-zh">跳到展覽內容</span>
+      <span class="copy-en">Skip to exhibition</span>
+    </a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AFTERTASTE 首頁">
+        <span class="brand-mark" aria-hidden="true">A.</span>
+        <span class="brand-name">AFTERTASTE<span> / 食後回聲</span></span>
+      </a>
+      <nav class="main-nav" aria-label="主選單">
+        <a href="#route"><span class="copy-zh">展覽路線</span><span class="copy-en">The route</span></a>
+        <a href="#menu"><span class="copy-zh">2050 餐盤</span><span class="copy-en">2050 menu</span></a>
+        <a href="#feedback"><span class="copy-zh">留下回聲</span><span class="copy-en">Leave a note</span></a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Switch to English" aria-pressed="false">
+        <span class="toggle-dot" aria-hidden="true"></span>
+        <span>中文 / EN</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> SDG 02 / SDG 13 <span>·</span> AN INTERACTIVE EXHIBITION</p>
+          <h1 id="hero-title">
+            <span class="copy-zh">每一餐，<br />都有氣候<span class="accent-word">回聲。</span></span>
+            <span class="copy-en">Climate<br />leaves an <span class="accent-word">aftertaste.</span></span>
+          </h1>
+          <p class="hero-deck copy-zh">從一碗米飯、一尾魚、一根香蕉，到老師手中的咖啡。循著氣候連鎖反應，重新想像 2050 年的餐桌。</p>
+          <p class="hero-deck copy-en">From a bowl of rice and a fish to a banana and a teacher’s coffee. Follow the climate chain reaction, then imagine a different table in 2050.</p>
+          <a class="round-link" href="#manifesto">
+            <span class="copy-zh">進入展覽</span><span class="copy-en">Enter exhibition</span>
+            <span class="round-link-icon" aria-hidden="true">↘</span>
+          </a>
+          <p class="hero-caption">A SCHOOL LUNCH, A PLANET IN MOTION <span>2026 / FIELD NOTES 01</span></p>
+        </div>
+        <div class="hero-art" aria-label="由氣候軌跡環繞的餐盤插畫">
+          <div class="hero-art-label label-top">CLIMATE<br />CHAIN REACTION <i>↗</i></div>
+          <svg class="plate-svg" viewBox="0 0 620 620" role="img" aria-labelledby="plate-title plate-desc">
+            <title id="plate-title">一張氣候餐盤</title>
+            <desc id="plate-desc">圓形餐盤周圍有代表咖啡、稻米、香蕉與海洋的軌道和食物圖形。</desc>
+            <defs>
+              <radialGradient id="plateGlow" cx="50%" cy="47%" r="55%">
+                <stop offset="0" stop-color="#f3f1df" />
+                <stop offset="0.72" stop-color="#d8d8c5" />
+                <stop offset="1" stop-color="#a8afa0" />
+              </radialGradient>
+              <linearGradient id="orbit" x1="0" x2="1" y1="0" y2="1">
+                <stop stop-color="#d1ef61" stop-opacity=".9" />
+                <stop offset="1" stop-color="#8bb9a8" stop-opacity=".12" />
+              </linearGradient>
+            </defs>
+            <circle cx="310" cy="310" r="260" fill="none" stroke="url(#orbit)" stroke-width="1" stroke-dasharray="2 8" />
+            <circle cx="310" cy="310" r="222" fill="none" stroke="#bdc4b3" stroke-opacity=".25" />
+            <path d="M66 351c77-60 105 58 183-15s131-74 194-6 98 39 122-22" fill="none" stroke="#d1ef61" stroke-width="1.5" stroke-opacity=".8" />
+            <path d="M92 194c54-47 97-56 136-42m178 295c39-1 72-22 107-57" fill="none" stroke="#f3f1df" stroke-opacity=".26" />
+            <circle cx="310" cy="310" r="174" fill="url(#plateGlow)" />
+            <circle cx="310" cy="310" r="148" fill="none" stroke="#738074" stroke-opacity=".24" />
+            <circle cx="310" cy="310" r="134" fill="none" stroke="#738074" stroke-opacity=".12" />
+            <path d="M230 304c23-41 64-55 101-44 36 10 57 36 63 72-25 19-62 28-99 18-31-9-52-25-65-46Z" fill="#737c47" />
+            <path d="M271 308c24-16 55-20 84-7m-69 20c24-15 49-18 72-11m-51-44c17-13 37-17 58-12" fill="none" stroke="#d1ef61" stroke-width="2" stroke-linecap="round" />
+            <path d="M337 382c38-34 75-25 88 1-18 25-51 39-88 31-20-5-34-16-44-30 10-12 25-21 44-2Z" fill="#6f9584" />
+            <path d="M356 387c15-14 36-19 57-11m-47 25c15-10 31-13 47-9" fill="none" stroke="#dce8d6" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M252 374c-9-30 8-61 34-69 14 25 10 57-9 75-8 7-16 10-25 12Z" fill="#d4a74a" />
+            <path d="M277 310c-4 22-13 43-25 62" fill="none" stroke="#746e42" stroke-width="2" />
+            <circle cx="197" cy="234" r="17" fill="#885b48" />
+            <path d="M195 217c12 8 15 22 5 34-11-8-15-21-5-34Z" fill="#a8795e" />
+            <circle cx="427" cy="229" r="4" fill="#687b5d" /><circle cx="445" cy="248" r="5" fill="#687b5d" /><circle cx="422" cy="263" r="3" fill="#687b5d" />
+            <circle cx="75" cy="352" r="5" fill="#d1ef61" /><circle cx="548" cy="308" r="4" fill="#d1ef61" />
+          </svg>
+          <div class="art-tag tag-left"><span>01 / 04</span><b>RICE · FISH</b></div>
+          <div class="art-tag tag-right"><span>02 / 04</span><b>BANANA · COFFEE</b></div>
+          <div class="hero-art-label label-bottom">YOUR PLATE<br />IS A CLIMATE MAP <i>✳</i></div>
+        </div>
+        <div class="hero-bottom"><span>SCROLL TO TRACE THE AFTERTASTE</span><span>24°08′ N&nbsp; / &nbsp;120°40′ E</span></div>
+      </section>
+
+      <section class="manifesto section-pad" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="section-index"><span>01</span><span>THE EVERYDAY</span></div>
+        <div class="manifesto-grid">
+          <div class="manifesto-heading reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span><span class="copy-zh">從午餐開始</span><span class="copy-en">START WITH LUNCH</span></p>
+            <h2 id="manifesto-title">
+              <span class="copy-zh">氣候危機<br />不會停在<br /><em>農田邊界。</em></span>
+              <span class="copy-en">Climate<br />doesn’t stop<br />at the <em>farm gate.</em></span>
+            </h2>
+          </div>
+          <div class="manifesto-note reveal">
+            <p class="note-mark">“</p>
+            <p class="copy-zh">熱浪、鹽水、海溫與病害，沿著生產和供應的路徑走進餐桌。每個環節都會改變我們吃得到什麼、吃得起什麼。</p>
+            <p class="copy-en">Heat, salinity, ocean conditions and disease travel through the paths that bring food to us. Each link can change what we can find—and afford—to eat.</p>
+            <div class="note-rule"></div>
+            <p class="note-source">SDG 02 <span>ZERO HUNGER</span><br />SDG 13 <span>CLIMATE ACTION</span></p>
+          </div>
+        </div>
+        <div class="lunch-strip reveal">
+          <div class="lunch-label"><span class="copy-zh">今天的餐盤</span><span class="copy-en">TODAY’S TRAY</span><small>01 / EVERYDAY FOODS</small></div>
+          <div class="lunch-item"><span class="food-symbol rice-symbol" aria-hidden="true">◒</span><b class="copy-zh">米飯</b><b class="copy-en">RICE</b><small>THE STAPLE</small></div>
+          <div class="lunch-item"><span class="food-symbol fish-symbol" aria-hidden="true">≈</span><b class="copy-zh">魚</b><b class="copy-en">FISH</b><small>FROM THE SEA</small></div>
+          <div class="lunch-item"><span class="food-symbol banana-symbol" aria-hidden="true">⌒</span><b class="copy-zh">香蕉</b><b class="copy-en">BANANA</b><small>IN SEASON?</small></div>
+          <div class="lunch-item"><span class="food-symbol coffee-symbol" aria-hidden="true">●</span><b class="copy-zh">咖啡</b><b class="copy-en">COFFEE</b><small>TEACHER’S CUP</small></div>
+        </div>
+      </section>
+
+      <section class="route-section section-pad" id="route" aria-labelledby="route-title">
+        <div class="section-index"><span>02</span><span>FOLLOW THE CHAIN</span></div>
+        <div class="route-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span class="copy-zh">一張餐盤，三段旅程</span><span class="copy-en">ONE PLATE, THREE JOURNEYS</span></p>
+          <h2 id="route-title"><span class="copy-zh">氣候，<em>正在上菜。</em></span><span class="copy-en">Climate is<br /><em>on the menu.</em></span></h2>
+          <p class="route-deck copy-zh">沿著食物回到產地，再從產地追蹤氣候如何改變生活。</p>
+          <p class="route-deck copy-en">Follow each food back to where it grows, then trace how changing conditions reshape everyday life.</p>
+        </div>
+        <div class="route-grid">
+          <a class="route-card route-coffee reveal" href="#coffee">
+            <span class="route-number">01 <i>↗</i></span>
+            <span class="route-graphic coffee-route-graphic" aria-hidden="true"><i></i><i></i><i></i><b>W / L</b></span>
+            <span class="route-region">WEST AFRICA <span>×</span> LATIN AMERICA</span>
+            <h3><span class="copy-zh">咖啡的兩種氣候</span><span class="copy-en">Two climates,<br />one coffee cup</span></h3>
+            <span class="route-card-foot"><span class="copy-zh">產量 × 適種性</span><span class="copy-en">OUTPUT × SUITABILITY</span><b>01 / 03</b></span>
+          </a>
+          <a class="route-card route-rice reveal" href="#rice">
+            <span class="route-number">02 <i>↗</i></span>
+            <span class="route-graphic rice-route-graphic" aria-hidden="true"><i></i><i></i><i></i><b>Δ / ≋</b></span>
+            <span class="route-region">SOUTH ASIA <span>×</span> SOUTHEAST ASIA</span>
+            <h3><span class="copy-zh">水退之後，還能種什麼？</span><span class="copy-en">What can grow<br />after the water?</span></h3>
+            <span class="route-card-foot"><span class="copy-zh">鹽水 × 耐受</span><span class="copy-en">SALINITY × RESILIENCE</span><b>02 / 03</b></span>
+          </a>
+          <a class="route-card route-fish reveal" href="#fish">
+            <span class="route-number">03 <i>↗</i></span>
+            <span class="route-graphic fish-route-graphic" aria-hidden="true"><i></i><i></i><i></i><b>~ / ↝</b></span>
+            <span class="route-region">NORTH AMERICA <span>×</span> GLOBAL OCEAN</span>
+            <h3><span class="copy-zh">海洋改變，魚往哪裡去？</span><span class="copy-en">When oceans shift,<br />where do fish go?</span></h3>
+            <span class="route-card-foot"><span class="copy-zh">魚群 × 海洋化學</span><span class="copy-en">FISH STOCKS × OCEAN CHEMISTRY</span><b>03 / 03</b></span>
+          </a>
+        </div>
+        <div class="chain-line" aria-hidden="true"><span>CLIMATE</span><i></i><span>FOOD SYSTEM</span><i></i><span>YOUR PLATE</span></div>
+      </section>
+
+      <section class="exhibit exhibit-coffee section-pad" id="coffee" aria-labelledby="coffee-title">
+        <div class="section-index"><span>03</span><span>ROOM 01 / COFFEE</span></div>
+        <div class="exhibit-layout">
+          <div class="exhibit-intro reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> WEST AFRICA / LATIN AMERICA</p>
+            <h2 id="coffee-title"><span class="copy-zh">一杯咖啡，<br />兩種氣候。</span><span class="copy-en">One cup.<br /><em>Two climates.</em></span></h2>
+            <p class="copy-zh">把咖啡帶回產地：西非的象牙海岸，和拉丁美洲的巴西。產量波動不會自己說明原因，但可以提醒我們追問降雨、溫度、品種和耕作。</p>
+            <p class="copy-en">Trace coffee to Côte d’Ivoire in West Africa and Brazil in Latin America. A change in output does not explain itself—it invites questions about rainfall, heat, varieties and farming.</p>
+            <div class="term-chip"><span>氣候適種性</span><i>CLIMATIC SUITABILITY</i></div>
+          </div>
+          <div class="evidence-stack reveal">
+            <article class="evidence-card evidence-coffee">
+              <div class="evidence-top"><span>FIELD NOTE / CI</span><span>2022 → 2023</span></div>
+              <h3><span class="copy-zh">象牙海岸咖啡產量</span><span class="copy-en">Côte d’Ivoire coffee output</span></h3>
+              <div class="metric-pair">
+                <div><small>COFFEE PRODUCTION</small><strong>95,519 <i>→</i> 46,932</strong><span>TONNES / CAMPAIGN</span></div>
+                <div><small>CULTIVATED AREA</small><strong>378,380 <i>→</i> 371,429</strong><span>HECTARES / CAMPAIGN</span></div>
+              </div>
+              <p class="data-reading copy-zh">官方資料顯示產量約減半，種植面積變化較小。這組數字沒有單獨證明氣候是唯一原因。</p>
+              <p class="data-reading copy-en">Official figures show output nearly halved while cultivated area changed less. These numbers alone do not prove that climate was the only cause.</p>
+              <a class="source-link" href="https://data.gouv.ci/datasets/statistiques-globales-sur-le-secteur-cacao-et-cafe" target="_blank" rel="noreferrer">SOURCE / Côte d’Ivoire Open Data ↗</a>
+            </article>
+            <article class="evidence-card evidence-brazil">
+              <div class="evidence-top"><span>FIELD NOTE / BR</span><span>2023 HARVEST</span></div>
+              <h3><span class="copy-zh">巴西的咖啡不是同一種反應</span><span class="copy-en">Brazil’s two coffees, two responses</span></h3>
+              <div class="brazil-stat"><strong>55.1<span>M</span></strong><div><b>60 KG BAGS</b><small><span class="copy-zh">整體產量比 2022 增加 8.2%</span><span class="copy-en">Total output rose 8.2% from 2022</span></small></div></div>
+              <p class="data-reading copy-zh">巴西官方估計：阿拉比卡增加，康尼隆（羅布斯塔）減少。把品種拆開看，才不會把農業變化簡化成單一答案。</p>
+              <p class="data-reading copy-en">Brazil’s official estimate rose for Arabica and fell for Conilon (Robusta). Looking at varieties separately keeps one crop from becoming a one-answer story.</p>
+              <a class="source-link" href="https://cast.conab.gov.br/post/2023-12-14_4_lev_cafe/" target="_blank" rel="noreferrer">SOURCE / CONAB, Brazil ↗</a>
+            </article>
+            <article class="evidence-card evidence-model">
+              <div class="evidence-top"><span>LOOKING AHEAD</span><span>2050s / MODEL</span></div>
+              <h3><span class="copy-zh">適合種植的地方會改變嗎？</span><span class="copy-en">Could suitable growing zones shift?</span></h3>
+              <p class="model-number">21 <span>CLIMATE MODELS</span></p>
+              <p class="data-reading copy-zh">CIAT 研究以 21 個全球氣候模型估算阿拉比卡咖啡至 2050 年代的氣候適種性。適種性地圖不是未來產量預報，也不代表羅布斯塔。</p>
+              <p class="data-reading copy-en">A CIAT study used 21 global climate models to estimate Arabica suitability in the 2050s. A suitability map is not a harvest forecast—and it does not represent Robusta.</p>
+              <a class="source-link" href="https://alliancebioversityciat.org/publications-data/projected-shifts-coffea-arabica-suitability-among-major-global-producing-regions" target="_blank" rel="noreferrer">SOURCE / CIAT RESEARCH ↗</a>
+            </article>
+          </div>
+        </div>
+        <div class="exhibit-question reveal"><span>ASK YOURSELF / 01</span><p><span class="copy-zh">如果咖啡產量下降，你還需要哪些資料，才能判斷氣候扮演什麼角色？</span><span class="copy-en">If coffee output falls, what else would you need to know before judging climate’s role?</span></p><b>↗</b></div>
+      </section>
+
+      <section class="exhibit exhibit-rice section-pad" id="rice" aria-labelledby="rice-title">
+        <div class="section-index"><span>04</span><span>ROOM 02 / RICE + BANANA</span></div>
+        <div class="exhibit-layout">
+          <div class="exhibit-intro reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> SOUTH ASIA / SOUTHEAST ASIA</p>
+            <h2 id="rice-title"><span class="copy-zh">水退之後，<br />還能種什麼？</span><span class="copy-en">After the water,<br /><em>what can grow?</em></span></h2>
+            <p class="copy-zh">孟加拉稻田面對鹽水和淹水的挑戰；湄公河三角洲也仰賴季節性的水與土壤。耐受品種能帶來選擇，但不能取代安全水源、農田管理與農民的決策。</p>
+            <p class="copy-en">Rice in Bangladesh faces salinity and flooding. The Mekong Delta also depends on seasonal water and soil conditions. Resilient varieties create options, but cannot replace safe water, farm support or farmers’ choices.</p>
+            <div class="term-chip"><span>鹽度入侵</span><i>SALINITY INTRUSION</i></div>
+          </div>
+          <div class="evidence-stack reveal">
+            <article class="evidence-card evidence-rice">
+              <div class="evidence-top"><span>ADAPTATION / BD</span><span>BRRI DHAN78</span></div>
+              <h3><span class="copy-zh">一種稻米，能承受多少？</span><span class="copy-en">How much can one rice variety withstand?</span></h3>
+              <div class="tolerance-grid">
+                <div><strong>6–8</strong><span>dS/m</span><small><span class="copy-zh">鹽度耐受</span><span class="copy-en">SALT TOLERANCE</span></small></div>
+                <div><strong>12–14</strong><span>DAYS</span><small><span class="copy-zh">淹水耐受</span><span class="copy-en">SUBMERGENCE</span></small></div>
+                <div><strong>4.5</strong><span>t/ha</span><small><span class="copy-zh">資料列示平均產量</span><span class="copy-en">PROFILE’S AVG. YIELD</span></small></div>
+              </div>
+              <p class="data-reading copy-zh">BRRI 品種資料列出這些特性；它描述的是特定品種，不是所有農田在極端天氣下的保證產量。</p>
+              <p class="data-reading copy-en">These figures come from a BRRI variety profile. They describe one variety—not a guaranteed harvest for every farm in extreme weather.</p>
+              <a class="source-link" href="https://riceprofile.brri.gov.bd/varieties/88" target="_blank" rel="noreferrer">SOURCE / BRRI RICE PROFILE ↗</a>
+            </article>
+            <article class="evidence-card evidence-banana">
+              <div class="evidence-top"><span>FIELD NOTE / VN</span><span>Q1 / 2025</span></div>
+              <h3><span class="copy-zh">香蕉也有自己的供應故事</span><span class="copy-en">Bananas have a supply story, too</span></h3>
+              <div class="brazil-stat banana-stat"><strong>708.9<span>K</span></strong><div><b>TONNES</b><small><span class="copy-zh">越南 2025 年第一季香蕉產量，年增 5.6%</span><span class="copy-en">Vietnam’s Q1 2025 banana output, up 5.6% year over year</span></small></div></div>
+              <p class="data-reading copy-zh">這是全國數字，不是湄公河三角洲單獨的觀測。TR4 香蕉病害資料也多以國家或行政區標示，不能直接定位到農田。</p>
+              <p class="data-reading copy-en">This is a national figure, not a Mekong Delta measurement. TR4 disease records are often mapped by country or region, not by individual farm.</p>
+              <a class="source-link" href="https://www.gso.gov.vn/en/data-and-statistics/2025/04/press-release-socio-economic-situation-in-the-first-quarter-of-2025/" target="_blank" rel="noreferrer">SOURCE / VIETNAM STATISTICS OFFICE ↗</a>
+              <a class="source-link source-link-secondary" href="https://gd.eppo.int/taxon/FUSAC4/distribution" target="_blank" rel="noreferrer">TR4 DISTRIBUTION / EPPO ↗</a>
+            </article>
+            <article class="evidence-card evidence-water">
+              <div class="evidence-top"><span>LOOK CLOSER</span><span>WATER / SOIL</span></div>
+              <h3><span class="copy-zh">河水的鹽度，不等於田裡的鹽度</span><span class="copy-en">River salinity isn’t soil salinity</span></h3>
+              <p class="data-reading copy-zh">把孟加拉測站的河水鹽度、稻米品種資料並列閱讀。衛星影像能呈現水域與植生改變，但鹽度需要測站或經驗證的產品佐證。</p>
+              <p class="data-reading copy-en">Read Bangladesh river measurements alongside rice variety data. Satellite images show water and vegetation changes; salinity needs station records or a validated product.</p>
+              <a class="source-link" href="https://data.gov.bd/bn/dataset/salinity-information-system" target="_blank" rel="noreferrer">SOURCE / BANGLADESH SALINITY SYSTEM ↗</a>
+            </article>
+          </div>
+        </div>
+        <div class="exhibit-question reveal"><span>ASK YOURSELF / 02</span><p><span class="copy-zh">一種耐鹽稻米能解決什麼？農田、種子取得與家庭選擇還需要什麼支持？</span><span class="copy-en">What can salt-tolerant rice solve—and what support do farms and families still need?</span></p><b>↗</b></div>
+      </section>
+
+      <section class="exhibit exhibit-fish section-pad" id="fish" aria-labelledby="fish-title">
+        <div class="section-index"><span>05</span><span>ROOM 03 / WILD FISH</span></div>
+        <div class="exhibit-layout">
+          <div class="exhibit-intro reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> NORTH AMERICA / GLOBAL OCEAN</p>
+            <h2 id="fish-title"><span class="copy-zh">海洋改變，<br />魚往哪裡去？</span><span class="copy-en">When oceans shift,<br /><em>where do fish go?</em></span></h2>
+            <p class="copy-zh">從阿拉斯加白令海的魚群評估，看到北美案例；再把鏡頭拉遠，理解全球野生捕撈與海洋化學。不同魚種的反應不一樣，野生捕撈也不能和養殖混為一談。</p>
+            <p class="copy-en">Start with fish-stock assessments in Alaska’s Bering Sea, then zoom out to global wild capture and ocean chemistry. Species respond differently, and wild capture is not aquaculture.</p>
+            <div class="term-chip"><span>野生捕撈</span><i>WILD CAPTURE FISHERIES</i></div>
+          </div>
+          <div class="evidence-stack reveal">
+            <article class="evidence-card evidence-ocean">
+              <div class="evidence-top"><span>GLOBAL / FAO FISHSTAT</span><span>2024</span></div>
+              <h3><span class="copy-zh">海洋提供了多少野生漁獲？</span><span class="copy-en">How much wild catch comes from the sea?</span></h3>
+              <div class="ocean-bars">
+                <div class="bar-row"><span>CAPTURE / ALL WATERS</span><div class="bar-track"><i style="--bar: 88%"></i></div><b>92 <small>M t</small></b></div>
+                <div class="bar-row"><span>MARINE CAPTURE</span><div class="bar-track"><i style="--bar: 76%"></i></div><b>80 <small>M t</small></b></div>
+                <div class="bar-row bar-aqua"><span>AQUACULTURE / SEPARATE</span><div class="bar-track"><i style="--bar: 96%"></i></div><b>100+ <small>M t</small></b></div>
+              </div>
+              <p class="data-reading copy-zh">FAO 2026 年發布的 2024 年統計：捕撈水生動物約 9,200 萬噸，其中海洋約 8,000 萬噸；養殖超過 1 億噸。這些是水生動物產量，不等於只計魚類。</p>
+              <p class="data-reading copy-en">FAO’s 2024 figures, released in 2026: about 92 million tonnes of captured aquatic animals, including 80 million tonnes from marine waters; aquaculture exceeded 100 million tonnes. These totals cover aquatic animals, not fish alone.</p>
+              <a class="source-link" href="https://www.fao.org/newsroom/detail/sofia-2026--global-fisheries-and-aquaculture-production-reaches-new-highs/" target="_blank" rel="noreferrer">SOURCE / FAO SOFIA 2026 ↗</a>
+            </article>
+            <article class="evidence-card evidence-stock">
+              <div class="evidence-top"><span>ALASKA / EBS</span><span>NOAA / 2019</span></div>
+              <h3><span class="copy-zh">不是每種魚，都一樣脆弱</span><span class="copy-en">Not every fish is equally vulnerable</span></h3>
+              <div class="stock-figure"><strong>36</strong><span><span class="copy-zh">個魚群與無脊椎動物群體</span><span class="copy-en">FISH & INVERTEBRATE STOCKS</span></span><i>↗</i></div>
+              <p class="data-reading copy-zh">NOAA 評估白令海 36 個魚群與無脊椎動物群體，指出部分岩魚、平頭鰈與帝王蟹脆弱度較高。結果依物種、棲地與評估方法而異。</p>
+              <p class="data-reading copy-en">A NOAA assessment examined 36 Bering Sea fish and invertebrate stocks. Some rockfish, flathead sole and Tanner crab ranked among the most vulnerable. Results vary by species, habitat and method.</p>
+              <a class="source-link" href="https://www.fisheries.noaa.gov/feature-story/study-looks-vulnerability-eastern-bering-sea-fish-crab-and-salmon-stocks-climate" target="_blank" rel="noreferrer">SOURCE / NOAA FISHERIES ↗</a>
+              <a class="source-link source-link-secondary" href="https://apps-st.fisheries.noaa.gov/stocksmart/" target="_blank" rel="noreferrer">STOCK ASSESSMENTS / STOCK SMART ↗</a>
+            </article>
+            <article class="evidence-card evidence-acid">
+              <div class="evidence-top"><span>OCEAN CHEMISTRY</span><span>OBSERVATIONS</span></div>
+              <h3><span class="copy-zh">酸化，先改變了海水的化學</span><span class="copy-en">Acidification changes ocean chemistry first</span></h3>
+              <p class="data-reading copy-zh">NOAA 的 OCADS 收錄海洋碳與酸化觀測、實驗及模型資料。貝類和部分浮游生物會直接受影響；魚類可能經由食物網承受間接影響，不應描述成魚的外殼正在溶解。</p>
+              <p class="data-reading copy-en">NOAA’s OCADS archives ocean-carbon observations, experiments and models. Shellfish and some plankton can be directly affected; fish may be affected through food webs. Fish do not have dissolving shells.</p>
+              <a class="source-link" href="https://www.ncei.noaa.gov/products/ocean-carbon-acidification-data-system" target="_blank" rel="noreferrer">SOURCE / NOAA OCADS ↗</a>
+            </article>
+          </div>
+        </div>
+        <div class="exhibit-question reveal"><span>ASK YOURSELF / 03</span><p><span class="copy-zh">你今天吃的魚是哪一種？知道魚種、產地和野生或養殖，會改變你的選擇嗎？</span><span class="copy-en">What fish did you eat today? Would knowing its species, origin and production method change your choice?</span></p><b>↗</b></div>
+      </section>
+
+      <section class="menu-lab section-pad" id="menu" aria-labelledby="menu-title">
+        <div class="section-index"><span>06</span><span>THE 2050 MENU LAB</span></div>
+        <div class="menu-lab-head reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span class="copy-zh">不是預測，是你的選擇</span><span class="copy-en">NOT A FORECAST. YOUR CHOICE.</span></p>
+          <h2 id="menu-title"><span class="copy-zh">重見光明，<br /><em>一起改寫菜單。</em></span><span class="copy-en">Step back into the light.<br /><em>Rewrite the menu.</em></span></h2>
+          <p class="copy-zh">挑選你願意放進 2050 餐盤的食材。這裡不替食材打環境分數；先問清楚它如何生產、從哪裡來、是否當季。</p>
+          <p class="copy-en">Choose what you would put on a 2050 plate. No ingredient gets an automatic green score. First ask how it was produced, where it came from and whether it is in season.</p>
+        </div>
+        <div class="menu-builder reveal">
+          <div class="menu-options">
+            <p class="option-label"><span class="copy-zh">選擇你的菜單線索</span><span class="copy-en">CHOOSE YOUR MENU CUES</span><small>SELECT ANY / 01—04</small></p>
+            <button class="menu-option" type="button" data-choice="local" aria-pressed="true"><span class="option-index">01</span><span><b><span class="copy-zh">當季在地蔬菜</span><span class="copy-en">Local, seasonal vegetables</span></b><small>SEASON × PLACE</small></span><i>+</i></button>
+            <button class="menu-option" type="button" data-choice="insect" aria-pressed="false"><span class="option-index">02</span><span><b><span class="copy-zh">昆蟲蛋白</span><span class="copy-en">Insect protein</span></b><small>ALTERNATIVE PROTEIN</small></span><i>+</i></button>
+            <button class="menu-option" type="button" data-choice="cultivated" aria-pressed="false"><span class="option-index">03</span><span><b><span class="copy-zh">培養肉</span><span class="copy-en">Cultivated meat</span></b><small>EMERGING FOOD</small></span><i>+</i></button>
+            <button class="menu-option" type="button" data-choice="saltRice" aria-pressed="false"><span class="option-index">04</span><span><b><span class="copy-zh">耐鹽稻米</span><span class="copy-en">Salt-tolerant rice</span></b><small>ADAPTATION × SEED</small></span><i>+</i></button>
+          </div>
+          <div class="menu-plate" aria-label="你的 2050 餐盤預覽">
+            <div class="menu-plate-top"><span>YOUR PLATE / 2050</span><span class="plate-live-dot"></span></div>
+            <div class="plate-drawing" aria-hidden="true"><div class="plate-ring"><div class="plate-part plate-part-one">RICE</div><div class="plate-part plate-part-two">FISH?</div><div class="plate-part plate-part-three">FRUIT</div><div class="plate-part plate-part-four">NEW</div><div class="plate-center">?</div></div></div>
+            <div class="menu-selection" aria-live="polite"><span class="copy-zh">已選擇：</span><span class="copy-en">SELECTED:</span><b class="selection-output">當季在地蔬菜</b></div>
+            <p class="menu-question copy-zh">當季，是什麼季節？<br />在地，是誰的家鄉？</p>
+            <p class="menu-question copy-en">In season—where?<br />Local—to whom?</p>
+          </div>
+        </div>
+        <div class="menu-foot reveal"><span>NO SINGLE INGREDIENT CAN FIX A FOOD SYSTEM</span><span><span class="copy-zh">比較證據，再做選擇。</span><span class="copy-en">COMPARE EVIDENCE. THEN CHOOSE.</span></span></div>
+      </section>
+
+      <section class="glossary-section section-pad" id="glossary" aria-labelledby="glossary-title">
+        <div class="section-index"><span>07</span><span>THE WORDS WE NEED</span></div>
+        <div class="glossary-head reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> FIELD GLOSSARY / 中文 × ENGLISH</p>
+          <h2 id="glossary-title"><span class="copy-zh">帶走幾個<br /><em>新詞。</em></span><span class="copy-en">Words for<br /><em>what comes next.</em></span></h2>
+        </div>
+        <div class="glossary-grid">
+          <article class="glossary-card reveal"><span>01 / FOOD SYSTEM</span><h3>氣候連鎖反應</h3><p>Climate chain reaction</p><small>一個氣候變化，如何沿著生產、運輸與餐桌傳遞影響。</small></article>
+          <article class="glossary-card reveal"><span>02 / CROPS</span><h3>作物產量</h3><p>Crop yield</p><small>單位土地收穫的作物數量；不同年份不能脫離面積與品種比較。</small></article>
+          <article class="glossary-card reveal"><span>03 / WATER</span><h3>鹽度入侵</h3><p>Salinity intrusion</p><small>含鹽海水或地下水向河口與陸地水系擴展的現象。</small></article>
+          <article class="glossary-card reveal"><span>04 / FISHERIES</span><h3>野生捕撈</h3><p>Wild capture fisheries</p><small>從自然水域捕獲水生生物；與水產養殖分開統計。</small></article>
+          <article class="glossary-card reveal"><span>05 / CLIMATE DATA</span><h3>氣候適種性</h3><p>Climatic suitability</p><small>氣候條件是否符合某作物生長需求，不等於實際產量。</small></article>
+          <article class="glossary-card reveal"><span>06 / FUTURE FOOD</span><h3>培養肉</h3><p>Cultivated meat</p><small>由動物細胞在受控環境中培養的肉類；環境影響仍需比較資料。</small></article>
+        </div>
+      </section>
+
+      <section class="feedback-section section-pad" id="feedback" aria-labelledby="feedback-title">
+        <div class="section-index"><span>08</span><span>LEAVE AN AFTERTASTE</span></div>
+        <div class="feedback-layout">
+          <div class="feedback-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-dot"></span><span class="copy-zh">觀展回饋</span><span class="copy-en">VISITOR REFLECTION</span></p>
+            <h2 id="feedback-title"><span class="copy-zh">哪一口，<br /><em>讓你重新思考？</em></span><span class="copy-en">Which bite<br /><em>made you think again?</em></span></h2>
+            <p class="copy-zh">寫下一個帶走的問題，或你想先改變的一件事。這份回饋只收集食物選擇和留言，不需要姓名或電子郵件。</p>
+            <p class="copy-en">Leave one question you’ll take with you, or one thing you want to change. This form asks only for a food choice and your note—no name or email.</p>
+          </div>
+          <form class="feedback-form reveal" id="feedback-form">
+            <label for="food-choice"><span class="copy-zh">哪種食物讓你最有感？</span><span class="copy-en">Which food stayed with you?</span></label>
+            <select id="food-choice" name="food" required>
+              <option value="rice">米飯 / Rice</option>
+              <option value="fish">魚 / Fish</option>
+              <option value="banana">香蕉 / Banana</option>
+              <option value="coffee">咖啡 / Coffee</option>
+              <option value="future">2050 未來食材 / A 2050 food</option>
+            </select>
+            <label for="reflection"><span class="copy-zh">留下一句回聲</span><span class="copy-en">Leave one aftertaste</span><small>OPTIONAL / 280 CHARACTERS</small></label>
+            <textarea id="reflection" name="reflection" maxlength="280" rows="3" placeholder="我今天開始想知道…… / Today, I started wondering…"></textarea>
+            <div class="form-submit-row"><button type="submit" class="submit-button"><span class="copy-zh">送出回饋</span><span class="copy-en">Send reflection</span><b>↗</b></button><span class="char-count" aria-live="polite">0 / 280</span></div>
+            <p class="form-status" id="form-status" aria-live="polite"><span class="copy-zh">回饋試算表尚未連結。建立 Apps Script Web App 後設定網址，即可啟用送出。</span><span class="copy-en">The feedback sheet is not connected yet. Add your Apps Script Web App URL to enable submissions.</span></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark">A.</span><span class="brand-name">AFTERTASTE<span> / 食後回聲</span></span></a>
+      <p><span class="copy-zh">氣候行動，從看見餐桌開始。</span><span class="copy-en">Climate action starts by looking at the table.</span></p>
+      <div class="footer-meta"><span>SDG 02 × SDG 13</span><span>MADE FOR THE NEXT MENU · 2026</span><a href="#top">BACK TO TOP ↑</a></div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
