@@ -37,4 +37,4 @@ Sources and notes are also linked in the exhibition itself. The figures below re
 
 ## GitHub Pages
 
-The site is configured for a static GitHub Pages deployment using GitHub Actions. Add the deployed Pages URL here after the first successful deployment.
+The site is deployed with GitHub Actions: [https://renee0102sunny.github.io/climate-chain-reaction/](https://renee0102sunny.github.io/climate-chain-reaction/).

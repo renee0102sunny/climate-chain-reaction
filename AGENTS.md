@@ -9,9 +9,9 @@
 - 目前已進入網站 MVP 實作階段：以原生 HTML/CSS/JavaScript、Vite、GSAP 與 ScrollTrigger 建立靜態雙語展覽。不要加入大型框架，除非使用者另行決定。
 - 靜態網站的觀展回饋表單需先支援 Apps Script Web App URL 設定；在使用者建立 Apps Script 前，不宣稱回饋已寫入試算表。
 - 首版策展網站已實作於 `index.html`、`src/main.js` 與 `src/styles.css`；`pnpm build` 可成功產生靜態網站。
-- GitHub Pages 部署仍待完成：此工作目錄尚未設定 Git remote，且目前執行環境找不到 GitHub CLI（`gh`），網路檢查亦無法解析 `github.com`。不得猜測或填入 Pages URL；需在可連線 GitHub 且有 `gh` 的環境設定使用者指定 Repo 後部署。
+- GitHub Pages 已部署至 https://renee0102sunny.github.io/climate-chain-reaction/，Repo 為 https://github.com/renee0102sunny/climate-chain-reaction；使用 `.github/workflows/deploy.yml` 由 GitHub Actions 建置並部署 `dist/`。
 - Google Apps Script 由使用者直接在瀏覽器中操作。不要安裝或使用 Clasp，也不要擅自建立 Apps Script 專案。
-- Git 工作樹目前沒有已知遠端 Repo。取得使用者指定的 Repo 後，才設定遠端並推送。
+- Git remote `origin` 指向 `https://github.com/renee0102sunny/climate-chain-reaction.git`；後續推送到 `main` 會觸發 Pages 部署。
 - GitHub Pages 連結必須等首次部署成功後，從部署結果取得，再寫入 README.md 並推送；不可猜測或預先填入網址。
 
 ## 技術與設計方向
